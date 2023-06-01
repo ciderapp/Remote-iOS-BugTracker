@@ -14,30 +14,19 @@ body:
       options:
         - label: I agree to follow the [Code of Conduct](https://cider.sh/legal/conduct) that this project adheres to.
           required: true
-        - label: I have searched the [issue tracker](https://github.com/ciderapp/Sabiiro-BugTracker/issues) for a bug report that matches the one I want to file, without success.
+        - label: I have searched the [issue tracker](https://github.com/ciderapp/Remote-iOS-BugTracker/issues) for a bug report that matches the one I want to file, without success.
           required: true
-        - label: I have read the [troublshooting FAQs](https://cider.gitbook.io/welcome-to-gitbook/support/faqs) and none solved my issue.
-          required: true
-  - type: dropdown
-    attributes:
-      label: What operating system are you using?
-      options:
-        - Windows
-        - macOS
-        - Linux
-    validations:
-      required: true
   - type: input
     attributes:
       label: Build Details
-      description: When did you install Cider? You can find your build details from [this guide](https://github.com/ciderapp/Sabiiro-BugTracker/blob/main/docs/FINDING_VERSION.md).
+      description: What testflight version are you currently using? You can find this in the testflight app on your device.
     validations:
       required: true
   - type: input
     attributes:
-      label: Operating System Version
-      description: What operating system version are you using? On Windows, click Start button > Settings > System > About. On macOS, click the Apple Menu > About This Mac. On Linux, use lsb_release or uname -a.
-      placeholder: "e.g. Windows 10 version 1909, macOS Catalina 10.15.7, or Ubuntu 20.04"
+      label: Cider Version
+      description: What version of Cider are you using? You can find your build details from [this guide](https://github.com/ciderapp/Sabiiro-BugTracker/blob/main/docs/FINDING_VERSION.md).
+      placeholder: "e.g. Cider 2.0.1"
     validations:
       required: true
   - type: textarea
@@ -70,12 +59,5 @@ body:
     attributes:
       label: Connect Device ID
       description: Helps us determine what version you are using (optional)
-    validations:
-      required: false
-  - type: input
-    id: ver
-    attributes:
-      label: Build timestamp
-      description: If this is not filled out already, feel free to ignore (optional)
     validations:
       required: false
